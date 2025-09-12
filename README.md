@@ -15,9 +15,9 @@ Incluye documentación interactiva con Swagger.
 - [Swagger](https://swagger.io/) (documentación de la API)
 - [Dotenv](https://www.npmjs.com/package/dotenv) (gestión de variables de entorno)
 
+### 📂 Estructura del Proyecto
 
-#  Estructura del proyecto
-
+```plaintext
 src/
 │── config/             # Configuración de la conexión a MySQL
 │── controllers/        # Controladores (lógica de negocio)
