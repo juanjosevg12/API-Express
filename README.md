@@ -39,7 +39,7 @@ src/
 │── server.js           # Punto de entrada del servidor
 │── swagger.js          # Configuración de Swagger para documentación
 
-
+### ```
 # Configuración
 
 1. **Clonar repositorio**
