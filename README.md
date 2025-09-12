@@ -19,28 +19,26 @@ Incluye documentación interactiva con Swagger.
 #  Estructura del proyecto
 
 src/
-│── config/ # Configuración de la conexión a MySQL
-│── controllers/ # Controladores (lógica de negocio)
-│ ├── auth.controller.js
-│ ├── task.controller.js
-│ └── user.controller.js
-│── middlewares/ # Middlewares de autenticación
-│ └── auth.middleware.js
-│── models/ # Modelos (consultas a la BD)
-│ ├── task.model.js
-│ └── user.model.js
-│── routes/ # Definición de rutas de la API
-│ ├── auth.routes.js
-│ ├── task.routes.js
-│ └── user.routes.js
-│── utils/ # Utilidades (helpers)
-│ └── jwt.js
-│── app.js # Configuración principal de Express
-│── server.js # Punto de entrada del servidor
-|── swagger.js # Configuracion del swagger
+│── config/             # Configuración de la conexión a MySQL
+│── controllers/        # Controladores (lógica de negocio)
+│   ├── auth.controller.js
+│   ├── task.controller.js
+│   └── user.controller.js
+│── middlewares/        # Middlewares de autenticación
+│   └── auth.middleware.js
+│── models/             # Modelos (consultas a la base de datos)
+│   ├── task.model.js
+│   └── user.model.js
+│── routes/             # Definición de rutas de la API
+│   ├── auth.routes.js
+│   ├── task.routes.js
+│   └── user.routes.js
+│── utils/              # Utilidades y helpers
+│   └── jwt.js
+│── app.js              # Configuración principal de Express
+│── server.js           # Punto de entrada del servidor
+│── swagger.js          # Configuración de Swagger para documentación
 
-
----
 
 # Configuración
 
