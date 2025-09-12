@@ -15,7 +15,9 @@ Incluye documentación interactiva con Swagger.
 - [Swagger](https://swagger.io/) (documentación de la API)
 - [Dotenv](https://www.npmjs.com/package/dotenv) (gestión de variables de entorno)
 
-### 📂 Estructura del Proyecto
+
+
+# 📂 Estructura del Proyecto
 
 ```plaintext
 src/
@@ -38,6 +40,9 @@ src/
 │── app.js              # Configuración principal de Express
 │── server.js           # Punto de entrada del servidor
 │── swagger.js          # Configuración de Swagger para documentación
+
+
+---
 
 ### Configuración
 
