@@ -40,11 +40,9 @@ src/
 │── app.js              # Configuración principal de Express
 │── server.js           # Punto de entrada del servidor
 │── swagger.js          # Configuración de Swagger para documentación
+```
 
-
----
-
-### Configuración
+# Configuración
 
 1. **Clonar repositorio**
    bash:
