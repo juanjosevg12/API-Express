@@ -13,34 +13,6 @@ const authMiddleware = require("../middlewares/auth.middleware");
 /**
  * @swagger
  * /api/user:
- *   post:
- *     summary: Crear un nuevo usuario
- *     tags: [Usuarios]
- *     requestBody:
- *       required: true
- *       content:
- *         application/json:
- *           schema:
- *             type: object
- *             properties:
- *               nombre:
- *                 type: string
- *                 example: Pedro
- *               email:
- *                 type: string
- *                 example: pedro@example.com
- *               password:
- *                 type: string
- *                 example: 123456
- *     responses:
- *       201:
- *         description: Usuario creado
- */
-router.post("/", userController.createUsuario);
-
-/**
- * @swagger
- * /api/user:
  *   get:
  *     summary: Obtener todos los usuarios
  *     tags: [Usuarios]
@@ -76,5 +48,27 @@ router.get("/", authMiddleware, userController.getUsuarios);
  *         description: Usuario no encontrado
  */
 router.get("/:id", authMiddleware, userController.getUsuarioById);
-
+/**
+ * @swagger
+ * /api/user/email:
+ *   post:
+ *     summary: Obtener un usuario por ID
+ *     tags: [Usuarios]
+ *     requestBody:
+ *       required: true
+ *       content:
+ *         application/json:
+ *           schema:
+ *             type: object
+ *             properties:
+ *               correo_electronico:
+ *                 type: string
+ *                 example: juan@example.com
+ *     responses:
+ *       200:
+ *         description: Usuario encontrado
+ *       404:
+ *         description: Usuario no encontrado
+ */
+router.post("/email", userController.getUserByEmail);
 module.exports = router;

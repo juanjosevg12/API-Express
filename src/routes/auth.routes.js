@@ -26,10 +26,10 @@ const authMiddleware = require('../middlewares/auth.middleware');
  *               nombre:
  *                 type: string
  *                 example: Juan
- *               email:
+ *               correo_electronico:
  *                 type: string
  *                 example: juan@example.com
- *               password:
+ *               contrasena:
  *                 type: string
  *                 example: 123456
  *     responses:
@@ -51,10 +51,10 @@ router.post('/register', authCtrl.register);
  *           schema:
  *             type: object
  *             properties:
- *               email:
+ *               correo_electronico:
  *                 type: string
  *                 example: juan@example.com
- *               password:
+ *               contrasena:
  *                 type: string
  *                 example: 123456
  *     responses:

@@ -64,6 +64,10 @@ router.get("/:id", tareaController.getTareaById);
  *               descripcion:
  *                 type: string
  *                 example: Ir a la tienda y comprar leche descremada
+ *               fecha_vencimiento:
+ *                 type: string
+ *                 format: date-time
+ *                 example: 2024-12-31T23:59:59Z
  *               userId:
  *                 type: string
  *                 example: 123
@@ -98,7 +102,11 @@ router.post("/", tareaController.createTarea);
  *               descripcion:
  *                 type: string
  *                 example: Ir a la plaza y comprar una docena de huevos
- *               completada:
+ *               fecha_vencimiento:
+ *                 type: string
+ *                 format: date-time
+ *                 example: 2024-12-31T23:59:59Z
+ *               estado:
  *                 type: boolean
  *                 example: true
  *     responses:
@@ -128,24 +136,5 @@ router.put("/:id", tareaController.updateTarea);
  *         description: Tarea no encontrada
  */
 router.delete("/:id", tareaController.deleteTarea);
-
-/**
- * @swagger
- * /api/task/user/{userId}:
- *   get:
- *     summary: Obtener todas las tareas de un usuario específico
- *     tags: [Tareas]
- *     parameters:
- *       - in: path
- *         name: userId
- *         required: true
- *         schema:
- *           type: string
- *         description: ID del usuario
- *     responses:
- *       200:
- *         description: Lista de tareas del usuario
- */
-router.get("/user/:userId", tareaController.getTareasByUser);
 
 module.exports = router;
