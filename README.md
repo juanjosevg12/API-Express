@@ -48,10 +48,11 @@ src/
    bash:
    git clone https://github.com/juanjosevg12/API-Express
    cd API-Express
+  
 2. **Instalar dependencias**
    bash:
    npm install
-3. **Configurar variables de entorno**
+4. **Configurar variables de entorno**
    .env
    PORT=8080
    DB_HOST=localhost
@@ -60,7 +61,7 @@ src/
    DB_NAME=instaleap
    JWT_SECRET=mi_clave_super_secreta
    JWT_EXPIRES=8h
-4. **Configuracion Base de Datos**
+5. **Configuracion Base de Datos**
    CREATE DATABASE instaleap;
    USE instaleap;
     
