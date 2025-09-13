@@ -80,6 +80,7 @@ src/
         id_usuario INT,
         FOREIGN KEY (id_usuario) REFERENCES usuario(id_usuario) 
    );
+   
 # Ejecucion.
 **Modo Desarollo**
 npm run dev
